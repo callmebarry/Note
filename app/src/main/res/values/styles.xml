@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="myDialogTheme" parent="@style/Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowBackground">@null</item><!--除去背景色-->
+    </style>
+
 </resources>

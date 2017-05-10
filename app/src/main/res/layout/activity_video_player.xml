@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 >
+    <include layout="@layout/title_bar"/>
+
+
+    <mabeijianxi.camera.views.SurfaceVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:saveEnabled="true" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:id="@+id/insert_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插入"/>
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:id="@+id/btn_cancel"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"/>
+    </LinearLayout>
+
+</RelativeLayout>

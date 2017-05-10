@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.barry.note">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--播音-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:name=".note.NoteApplication"
         android:allowBackup="true"
@@ -18,6 +30,14 @@
         </activity>
         <activity android:name=".ui.activity.EditerActivity"/>
         <activity android:name=".ui.activity.SearchActivity"/>
+        <activity
+            android:name=".ui.activity.SimpleActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog.Alert"/>
+        <activity android:name="mabeijianxi.camera.MediaRecorderActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth"
+            />
+        <activity android:name=".ui.activity.VideoPlayerActivity"
+                  android:theme="@style/myDialogTheme"/>
     </application>
 
 </manifest>

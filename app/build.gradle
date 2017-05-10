@@ -6,7 +6,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.barry.note"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -35,14 +35,30 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 
+    //富文本编辑器
     compile 'jp.wasabeef:richeditor-android:1.2.2'
 
+    //颜色选择器
     compile 'cn.qqtheme.framework:ColorPicker:1.5.0'
 
     compile 'org.greenrobot:greendao:3.0.1'
     compile 'org.greenrobot:greendao-generator:3.0.0'
 
+    //列表滑动
     compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+
+
+    //图片选择器
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //视频录制
+    compile 'com.mabeijianxi:small-video-record:1.2.0'
+
+
+    //录制音频
+    compile 'com.lqr.audio:library:1.0.0'
 
 }
 configurations.all {

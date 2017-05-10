@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btnPickByTake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:text="拍照" />
+
+                <Button
+                    android:id="@+id/btnPickBySelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:text="选择照片" />
+
+</LinearLayout>

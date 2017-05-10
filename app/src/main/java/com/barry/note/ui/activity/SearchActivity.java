@@ -58,6 +58,7 @@ public class SearchActivity extends BaseActivity {
                 search();
                 break;
         }
+        hidKeyboard();
     }
 
     @Override
